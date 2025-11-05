@@ -1,8 +1,11 @@
 import axios from "axios";
 
-// Create axios instance with default config
+// Get the backend URL from environment variable
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+// Create axios instance with absolute backend url
 const API = axios.create({
-  baseURL: "/api",
+  baseURL: `${API_BASE_URL}/api`,
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
