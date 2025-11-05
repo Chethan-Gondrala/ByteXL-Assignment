@@ -36,7 +36,7 @@ export default function QuoteGenerator() {
 
       setLoading(false);
     } catch (err) {
-      console.error("❌ Quote fetch error:", err);
+      console.error("Something Went Wrong:", err);
 
       const errorMsg =
         err.response?.data?.error || err.message || "Could not fetch quote";
