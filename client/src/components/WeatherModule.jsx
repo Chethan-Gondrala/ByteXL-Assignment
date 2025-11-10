@@ -38,7 +38,7 @@ export default function WeatherModule() {
 
   return (
     <div className="weather-module">
-      <h2>🌤️ Weather Information</h2>
+      <h2>🌤️ Weather Updates</h2>
 
       <form onSubmit={handleSearch} className="weather-search">
         <input
